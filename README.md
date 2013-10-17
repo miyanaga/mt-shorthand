@@ -25,20 +25,20 @@ It if short for mt:var with escape="html".
 s means set.
 Set variables about each attribute.
 
-`&lt;mt:s foo="bar" hoge="fuga"&gt;` sets $foo as 'bar' and $hoge as 'fuga'.
+`<mt:s foo="bar" hoge="fuga">` sets $foo as 'bar' and $hoge as 'fuga'.
 
 ### mt:d
 
 d means defaults.
 Set variables about each attribute if empty.
 
-`&lt;mt:s foo="bar" hoge="fuga"&gt` sets $foo as 'bar' and $hoge as 'fuga' **if undef or empty string**.
+`<mt:s foo="bar" hoge="fuga">` sets $foo as 'bar' and $hoge as 'fuga' **if undef or empty string**.
 
 ### mt:sb
 
 It is short for mt:SetVarBlock.
 
-`&lt;mt:sb foo append="1"&gt;Hello&lt;/mt:sb&gt;` appends 'Hello' to foo.
+`<mt:sb n="foo" append="1">Hello</mt:sb>` appends 'Hello' to foo.
 
 ## Others
 
