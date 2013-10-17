@@ -58,8 +58,13 @@ sub hdlr_dump {
 }
 
 sub hdlr_sb {
-    print STDERR "setvarblock", "\n";
-    shift->invoke_handler( 'setvarblock', @_ );
+    my $ctx = shift;
+    my ( $args ) = @_;
+    
+    my $name = delete $args->{n} // delete $args->{name};
+    $args->{name} = $name;
+
+    $ctx->invoke_handler( 'setvarblock', @_ );
 }
 
 sub hdlr_jsonv {
