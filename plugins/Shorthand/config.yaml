@@ -1,0 +1,15 @@
+id: Shorthand
+name: Shorthand
+version: 0.1
+description: <__trans phrase='Provides shorthanded template tags.'>
+
+tags:
+  function:
+    s: $Shorthand::MT::Plugin::Shorthand::hdlr_s
+    d: $Shorthand::MT::Plugin::Shorthand::hdlr_d
+    v: $Shorthand::MT::Plugin::Shorthand::hdlr_v
+    e: $Shorthand::MT::Plugin::Shorthand::hdlr_v
+    h: $Shorthand::MT::Plugin::Shorthand::hdlr_h
+    dump: $Shorthand::MT::Plugin::Shorthand::hdlr_dump
+  block:
+    sb: $Shorthand::MT::Plugin::Shorthand::hdlr_sb
